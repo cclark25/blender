@@ -109,4 +109,6 @@ void register_shader_nodes()
   register_node_type_sh_volume_scatter();
   register_node_type_sh_wavelength();
   register_node_type_sh_wireframe();
+
+  void register_node_type_sh_test();
 }

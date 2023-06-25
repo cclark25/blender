@@ -506,6 +506,8 @@ set(GLSL_SRC
 
 
   GPU_shader_shared_utils.h
+
+  shaders/material/test_shader.glsl
 )
 
 set(GLSL_SRC_TEST

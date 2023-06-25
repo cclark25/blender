@@ -126,6 +126,8 @@ set(SRC
 
   node_shader_register.hh
   node_shader_util.hh
+
+  nodes/test_shader.cc
 )
 
 set(LIB
