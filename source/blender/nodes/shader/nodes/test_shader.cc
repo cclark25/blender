@@ -33,7 +33,7 @@ static int node_shader_gpu_shader_test(GPUMaterial *mat,
   return GPU_stack_link(mat, node, "node_shader_test", in, out);
 }
 
-}  // namespace blender::nodes::node_shader_bsdf_diffuse_cc
+}  // namespace blender::nodes::node_shader_test_cc
 
 /* node type definition */
 void register_node_type_sh_test()
@@ -42,7 +42,7 @@ void register_node_type_sh_test()
 
   static bNodeType ntype;
 
-  sh_node_type_base(&ntype, SH_NODE_BSDF_DIFFUSE, "Shader Test", NODE_CLASS_SHADER);
+  sh_node_type_base(&ntype, SH_NODE_SHADER_TEST, "Shader Test", NODE_CLASS_SHADER);
   ntype.declare = file_ns::node_declare;
   node_type_size_preset(&ntype, NODE_SIZE_MIDDLE);
   ntype.gpu_fn = file_ns::node_shader_gpu_shader_test;
